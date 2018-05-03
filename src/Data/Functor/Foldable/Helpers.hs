@@ -1,3 +1,5 @@
+-- | Some Helper Functions for recursion-schemes
+
 module Data.Functor.Foldable.Helpers 
   ( module Data.Functor.Foldable.Helpers 
   , module Data.Functor.Foldable
@@ -6,9 +8,7 @@ module Data.Functor.Foldable.Helpers
 import Data.Functor.Foldable
 import Control.Arrow ((&&&), (***))
 
--- Some Helper Functions for recursion-schemes
-
--- | funzip see also semigroups -Data.List.NonEmpty  
+-- | funzip see also semigroups Data.List.NonEmpty  
 funzip :: Functor f => f (a, b) -> (f a, f b)
 funzip = fmap fst &&& fmap snd
 
