@@ -10,11 +10,12 @@ cabal-dev
 .hpc
 .hsenv
 .cabal-sandbox/
-cabal.sandbox.config
+.ghc.*
 *.prof
 *.aux
 *.hp
 *.eventlog
 .stack-work/
-cabal.project.local
 .HTF/
+cabal.project.local
+cabal.sandbox.config
